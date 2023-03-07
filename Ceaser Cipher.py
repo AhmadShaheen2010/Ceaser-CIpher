@@ -1,0 +1,6 @@
+message = input("What is your message? ")
+shift = int(input("What is your shift? "))
+encrypted = ''.join(chr(ord(char)+shift) for char in message)
+decrypted = ''.join(chr(ord(char)-shift) for char in encrypted)
+print("The encrypyted message is: " + encrypted)
+print("The decrypted message is: " + decrypted)
